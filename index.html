@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Campus Canoe</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+
+        var form = document.getElementsByName('inscripcion')
+        form.url = 'https://script.google.com/macros/s/AKfycbyiI0IDy-H5j2ynzXBJbvTuigqZcC7LFcXUuJl_1o5IYkmiOd0/exec
+        
+        function sendInscription() {
+
+            fetch
+        }
+
+        $('#submit-form').on('click', function (e) {
+            e.preventDefault();
+            var jqxhr = $.ajax({
+                url: url,
+                method: "GET",
+                dataType: "json",
+                data: $form.serializeObject()
+            }).success(
+                // do something
+            );
+        })
+    </script>
+</head>
+
+<body>
+    <header>
+        CAMPUS TECNIFICACIÓN
+    </header>
+    <main>
+
+        <section class="cover">
+            <h1>CAMPUS TECNIFICACIÓN</h1>
+            <h4>BALONCESTO FEMENINO</h4>
+            <img src="img2/logo.png" class="logo" />
+            <h2>CALPE 21 - 26 JUNIO 2020</h2>
+        </section>
+
+        <section class="cover">
+            <h3>DESPLAZAMIENTOS</h3>
+            <div class="content horizontal">
+                <div class="card">
+                    <h4>Salida</h4>
+                    <ul>
+                        <li>Explanada del Bernabeu</li>
+                        <li>21 Junio</li>
+                        <li>9:00 horas</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>Regreso</h4>
+                    <ul>
+                        <li>Explanada del Bernabeu</li>
+                        <li>26 Junio</li>
+                        <li>21:00 horas aprox.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="accommodation">
+            <div class="gallery">
+                <img src="img2/alojamiento0.jpg" class="photo" />
+                <img src="img2/alojamiento1.jpg" class="photo" />
+                <img src="img2/alojamiento2.jpg" class="photo" />
+                <img src="img2/alojamiento3.jpg" class="photo" />
+            </div>
+            <h3>ALOJAMIENTO</h3>
+            <div class="content">
+                <p>
+                    Situado en Calpe, en el corazón de la Costa Blanca, a 100 metros de la playa, 4YOU no pretende ser
+                    solo un Youth Hostel junto
+                    al mar, sino un punto de encuentro de jóvenes de todo el mundo donde disfrutar de una gran variedad
+                    de actividades para todo tipo de visitantes.
+                </p>
+                <a download href="./pdf/4YOU.pdf"><button class="donwnload">Mas información...</button></a>
+            </div>
+        </section>
+
+        <section class="facilities">
+            <div class="gallery">
+                <img src="img2/pista1.jpg" class="photo" />
+                <img src="img2/pista2.jpg" class="photo" />
+                <img src="img2/pista1.jpg" class="photo" />
+            </div>
+            <h3>INSTALACIONES</h3>
+            <div class="content">
+                <div class="card">
+                    <ul>
+                        <li>Pabellon Domigo Crespo (madera)</li>
+                        <li>Pista Azul (Taraflex)</li>
+                        <li>Pabellon Ifach (madera></li>
+                        <li>Pistas Exteriores</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="facilities">
+            <h3>ENTRENAMIENTOS</h3>
+            <div class="content horizontal">
+                <div class="card">
+                    <h4>Sesion de Mañana</h4>
+                    <details open>
+                        <summary>Mejora Individual</summary>
+                        <p>Trabajo especificos de bote y tiro en grupos reducidos .</p>
+                    </details>
+                </div>
+                <div class="card">
+                    <h4>Sesion de Tarde</h4>
+                    <details open>
+                        <summary>Trabajo Colectivo</summary>
+                        <p>Desde el 2c2 al 5c5, trabajo más orientado la táctica individual y colectiva .</p>
+                    </details>
+                    <details open>
+                        <summary>Competiciones</summary>
+                        <p>5c5,Two Ball .....</p>
+                    </details>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="activities">
+            <h3>ACTIVIDADES</h3>
+            <div class="content horizontal">
+                <div class="card">
+                    <h4>Excursiones</h4>
+                    <ul>
+                        <li>Paseo Ecológico (Peñon Ifach)</li>
+                        <li>Ruta por las Salinas de Calpe</li>
+                        <li>Playa de Calpe</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>Tiempo Libre</h4>
+                    <ul>
+                        <li>Playa de Calpe</li>
+                        <li>Veladas Nocturnas</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="prices">
+            <h3>Precios</h3>
+            <div class="content horizontal">
+                <div class="card price">
+                    <ul>
+                        <li>Alojamiento en pensión completa</li>
+                        <li>Ropa de Entrenamiento</li>
+                        <li>Excursiones</li>
+                        <li>Actividades Ocio</li>
+                        <li>Entrenadores Titulados</li>
+                        <li>Transporte ida y vuelta</li>
+                        <li>Picnic de vuelta</li>
+                    </ul>
+                    <footer> 350 €</footer>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc_r0aD89yKTQouBwcDxyp6R_o3_PiQeYgS2YHw4k1uq4OY0g/viewform?embedded=true" width="640" height="1058" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+            <footer>
+                <h5>Aviso Legal</h5>
+                <p>Política de Provacidad. Sus datos de contacto serán usados exclusivamente para las tareas relacionadas con la prestación del servicio, tanto por correo como por telefono</p>
+            </footer>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

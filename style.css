@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    text-rendering: geometricPrecisions;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: solid 2px #0046a0;
+    background-color: #0046a0;
+    color: #FFF;
+    border-radius: 2em;
+    padding: .5em 1em;
+    font-size: 1em;
+    font-weight: 400;
+    min-width: 120px;
+}
+
+button:hover {
+    background-color: #FFF;
+    color: #0046a0;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 4vh;
+    padding-top: 3em;
+    margin-bottom: 0em;
+    white-space: nowrap;
+}
+
+h2 {
+    font-size: 3vh;
+    padding: 3em;
+    white-space: nowrap;
+}
+
+h3 {
+    font-size: 2vh;
+    font-weight: 300;
+    padding: 1rem;
+    text-align: center;
+    color: #0046a0;
+    text-transform: uppercase;
+}
+
+header {
+    height: 3em;
+    background-color: #0046a0;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vh;
+    font-weight: 200;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+main {
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    width: 100%;
+    height: calc(100vh - 3em);
+}
+
+section {
+    height: calc(100vh - 3em);
+    scroll-snap-align: start;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+
+}
+
+section>.gallery {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    box-sizing: border-box;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    display: flex;
+}
+
+.photo {
+    position: relative;
+    height: 100%;
+    scroll-snap-align: center;
+}
+
+section>.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+section>.content>p {
+    max-width: 600px;
+    min-height: 200px;
+}
+
+.logo {
+    width: 70vh;
+    height: 80vw;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.card {
+    margin-top: 1em;
+    background-color: white;
+    border-radius: 3px;
+    padding: 1em;
+    margin: 1em;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.field {
+    width: 22em;
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+}
+
+.field>label {
+    width: 10em;
+    font-weight: 300;
+}
+
+.field>input {
+    flex: 1;
+    border: solid 0px;
+    outline: none;
+    font-size: 1em;
+    font-weight: 300;
+    padding: 5px;
+}
+
+.field>input:focus {
+    background-color: transparent;
+    border-bottom: solid 1px #0046a0;
+    color: #0046a0;
+}
+
+
+
+section.cover {
+    background-image: url("img2/image1.jpeg");
+    align-items: center;
+    justify-content: center;
+}
+
+section.accommodation {
+
+}
+
+section.facilities {
+    background-color: rgb(168, 157, 192);
+    background-image: url("img/image3.jpeg");
+    background-blend-mode: screen;
+}
+
+section.activities {
+    background-color: rgb(168, 157, 192);
+    background-image: url("img/image4.jpeg");
+    background-blend-mode: screen;
+}
+
+section.prices {
+    background-color: #fff;
+}
+
+section>.content.horizontal {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+section.contact {
+    background-color: #f2f5f6;
+    align-items: center;
+}
+
+
+.card {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    min-height: 240px;
+}
+
+.card>h4 {
+    font-weight: 300;
+    background-color: #0046a0;
+    color: #FFF;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.card>details {
+    flex:1;
+    font-weight: 100;
+    padding: 1em;
+    max-width: 12em;
+}
+
+.card>details>p {
+    margin: 0;
+    padding: 1em;
+    color: #1c0e63b3;
+}
+.card.price>footer {
+    background-color: rgb(255,255,0);
+    height: 3em;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    padding: 1em;
+
+}
